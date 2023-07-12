@@ -3,7 +3,7 @@ const dotenv = require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const fetch = require('node-fetch');
+import fetch from 'cross-fetch';
 app.use(express.json()) //pass json from frontend to backend
 app.use(cors())
 
